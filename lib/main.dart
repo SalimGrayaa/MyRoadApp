@@ -31,8 +31,6 @@ class MyApp extends StatelessWidget {
               child: Image.asset('assets/logo.png',)
               )
               ),
-              
-            
           buttonwidget('Sign Up', home(), context),
           buttonwidget('Log In', home(), context),
                    

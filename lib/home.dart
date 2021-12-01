@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myroad/signup_firstpage.dart';
+import 'package:myroad/widgets/buttonwidget.dart';
 class home extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -23,12 +25,7 @@ class home extends StatelessWidget{
                 },
               ),
               const SizedBox(height: 20.0),
-              ElevatedButton(
-                onPressed: (){
-
-                },
-                 child: Text('Next'),
-                 ),
+              buttonwidget('Next', signup_page(), context)
             ],
             ) ,
           ) ,
