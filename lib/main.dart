@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myroad/widgets/buttonwidget.dart';
 import 'package:sizer/sizer.dart';
+import 'Salim Grayaa/home.dart';
 
-import 'home.dart';
 
 
 void main() {
@@ -20,24 +18,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFE5E5E5),
-      body : Column(
-        children: <Widget>[
-        Center(
-          
-            child: Container(
-             margin: EdgeInsets.fromLTRB(0, 15.h, 0, 8.h),
-              child: Image.asset('assets/logo.png',)
-              )
-              ),
-          buttonwidget('Sign Up', home(), context),
-          buttonwidget('Log In', home(), context),
-                   
- 
-
-        ],
-      ),
-    );
+    return home();
   }
 }

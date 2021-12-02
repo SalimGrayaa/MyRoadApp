@@ -10,11 +10,10 @@ Widget buttonwidget(String txt ,Widget page , context ){
               }));
             },
             child: Container(
-              margin: const EdgeInsets.symmetric(vertical: 10.0),
               width: 80.w,
-                padding: const EdgeInsets.symmetric(horizontal: 8.0,vertical: 10.0),
+                padding: EdgeInsets.symmetric(vertical: 3.w),
                 decoration: BoxDecoration(
-                  borderRadius:BorderRadius.circular(20),
+                  borderRadius:BorderRadius.circular(15),
                   color: const Color(0xFFCE6A6B)
                 ),
                 child: Text(
