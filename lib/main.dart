@@ -1,6 +1,8 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'Salim Grayaa/home.dart';
+import 'Views/homepage/home.dart';
+
 
 
 
@@ -18,6 +20,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return home();
+    return AnimatedSplashScreen(
+      splashIconSize:50.h,
+      backgroundColor: const Color(0xFFE5E5E5),
+      splash: Center(
+        child: Image.asset('assets/logo.png',
+        fit:BoxFit.cover
+        ),
+      ),
+      centered: true,
+      
+      nextScreen: home(),
+      
+    );
   }
 }

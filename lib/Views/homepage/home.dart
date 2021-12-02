@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:myroad/Salim%20Grayaa/signup.dart';
-import 'package:myroad/Salim%20Grayaa/widgets/buttonwidget.dart';
+import 'package:myroad/Views/signup/signup.dart';
+import 'package:myroad/Views/widgets/buttonwidget.dart';
+
 import 'package:sizer/sizer.dart';
 
 class home extends StatelessWidget{

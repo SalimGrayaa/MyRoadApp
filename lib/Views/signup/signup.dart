@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:myroad/Salim%20Grayaa/signup_firstpage.dart';
-import 'package:myroad/Salim%20Grayaa/widgets/buttonwidget.dart';
-import 'package:myroad/Salim%20Grayaa/widgets/formspace.dart';
+import 'package:myroad/Views/signup/signup_firstpage.dart';
+import 'package:myroad/Views/widgets/buttonwidget.dart';
+import 'package:myroad/Views/widgets/formspace.dart';
 import 'package:sizer/sizer.dart';
 class signup extends StatelessWidget{
   @override
