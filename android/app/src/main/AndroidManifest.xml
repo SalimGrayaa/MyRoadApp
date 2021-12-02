@@ -3,6 +3,8 @@
    <application
         android:label="myroad"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyA24y4kw-A6WYB5eO_Fu5ylWvyXuiHKUVc"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
