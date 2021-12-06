@@ -1,5 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:myroad/App_Bloc/application_bloc.dart';
+import 'package:myroad/Views/mainMapScreen/mainMapScreen.dart';
+import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'Views/homepage/home.dart';
 
@@ -9,8 +12,12 @@ import 'Views/homepage/home.dart';
 void main() {
   runApp(Sizer(
          builder: (context, orientation, deviceType) {
-        return const MaterialApp(
-          home: MyApp() 
+         return /*ChangeNotifierProvider(
+        //     create : (context) => ApplicationBloc(),
+        //     child:*/ const MaterialApp(
+            debugShowCheckedModeBanner: false,
+            home: MyApp() 
+          //),
         );
       },
   ));
