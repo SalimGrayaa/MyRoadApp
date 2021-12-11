@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myroad/Views/loginPage/login.dart';
 import 'package:myroad/Views/loginPage/viewmodel/logincontroller.dart';
-import 'package:myroad/Views/profile/profile.dart';
+import 'package:myroad/Views/mainMapScreen/mainMapScreen.dart';
 
 class LoadingData extends StatefulWidget with ChangeNotifier {
   String? email;
@@ -27,8 +27,7 @@ class _LoadingDataState extends State<LoadingData> {
                       child: CircularProgressIndicator(),
                     );
                   } else if (snapshot.hasData) {
-                    print('hello');
-                    return profil();
+                    return MainMapScreen();
                   } else {
                     print(snapshot);
                     return SignIn();
