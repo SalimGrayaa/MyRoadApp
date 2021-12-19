@@ -3,6 +3,8 @@ import 'package:myroad/Views/loginPage/login.dart';
 import 'package:myroad/Views/loginPage/viewmodel/logincontroller.dart';
 import 'package:myroad/Views/mainMapScreen/mainMapScreen.dart';
 
+import '../../Settings/Settings.dart';
+
 class LoadingData extends StatefulWidget with ChangeNotifier {
   String? email;
   String? password;
@@ -27,7 +29,7 @@ class _LoadingDataState extends State<LoadingData> {
                       child: CircularProgressIndicator(),
                     );
                   } else if (snapshot.hasData) {
-                    return MainMapScreen();
+                    return settingpage();
                   } else {
                     print(snapshot);
                     return SignIn();

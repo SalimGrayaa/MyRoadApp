@@ -1,11 +1,13 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:myroad/Views/homepage/home.dart';
 import 'package:myroad/Views/loginPage/viewmodel/logincontroller.dart';
 import 'package:myroad/Views/profile/viewmodel/profilecontroller.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'Views/Settings/LocalString.dart';
 import 'Views/signup/viewermodel/registrationcontroller.dart';
 
 void main() async {
@@ -17,7 +19,10 @@ void main() async {
         ChangeNotifierProvider(create: (_) => SignInController()),
         ChangeNotifierProvider(create: (_) => SignUpController()),
         ChangeNotifierProvider(create: (_) => ProfilController())
-      ], child: MaterialApp(debugShowCheckedModeBanner: false, home: MyApp()));
+      ], child: GetMaterialApp(
+        translations: LocalString(), 
+      locale: Locale('en', 'US'),
+      debugShowCheckedModeBanner: false, home: MyApp()));
     },
   ));
 }
