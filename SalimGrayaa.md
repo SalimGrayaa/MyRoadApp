@@ -1,11 +1,11 @@
-native splash screen 
-splash screen
-Login page
-Sign Up page 
-Firebase Authentication : login , logout , registration
-CircularProgressIndicator when receiving data from the data base
-Validator for fields in login and registration page
-SnackBar when there is an error
+native splash screen ,
+splash screen ,
+Login page ,
+Sign Up page ,
+Firebase Authentication : login , logout , registration ,
+CircularProgressIndicator when receiving data from the data base ,
+Validator for fields in login and registration page ,
+SnackBar when there is an error ,
 
 Folders :
   -home: home.dart
