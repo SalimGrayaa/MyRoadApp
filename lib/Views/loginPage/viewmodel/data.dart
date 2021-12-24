@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myroad/Views/loginPage/login.dart';
 import 'package:myroad/Views/loginPage/viewmodel/logincontroller.dart';
 import 'package:myroad/Views/mainMapScreen/mainMapScreen.dart';
+import 'package:myroad/Views/mainScreen/mainScreen.dart';
 import 'package:myroad/Views/profile/profile.dart';
 
 import '../../Settings/Settings.dart';
@@ -30,7 +31,7 @@ class _LoadingDataState extends State<LoadingData> {
                       child: CircularProgressIndicator(),
                     );
                   } else if (snapshot.hasData) {
-                    return profil();
+                    return MainScreen();
                   } else {
                     print(snapshot);
                     return SignIn();

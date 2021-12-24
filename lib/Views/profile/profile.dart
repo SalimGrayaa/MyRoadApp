@@ -8,6 +8,7 @@ import 'package:myroad/Views/Settings/settings.dart';
 import 'package:myroad/Views/contact/contact.dart';
 import 'package:myroad/Views/homepage/home.dart';
 import 'package:myroad/Views/mainMapScreen/mainMapScreen.dart';
+import 'package:myroad/Views/mainScreen/mainScreen.dart';
 import 'package:myroad/Views/profile/profile_friend.dart';
 import 'package:myroad/Views/profile/themes.dart';
 import 'package:myroad/Views/profile/user_preferences.dart';
@@ -41,9 +42,9 @@ class _ProfilState extends State<profil> {
     return Consumer<ProfilController>(builder: (context, value, child) {
       return Scaffold(
         // Generated code for this AppBar Widget...
-      appBar: PreferredSize(
+        appBar: PreferredSize(
           preferredSize:
-                Size.fromHeight(MediaQuery.of(context).size.height * 0.08),
+              Size.fromHeight(MediaQuery.of(context).size.height * 0.08),
           child: AppBar(
             backgroundColor: Color(0xFF104276),
             automaticallyImplyLeading: true,
@@ -51,7 +52,7 @@ class _ProfilState extends State<profil> {
               onPressed: () async {
                 await signincontroller.signout();
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return MainMapScreen();
+                  return MainScreen();
                 }));
               },
               icon: Icon(
@@ -194,8 +195,10 @@ class _ProfilState extends State<profil> {
                 padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => profile_friend()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => profile_friend()));
                   },
                   child: Text('view contact '),
                   style: ElevatedButton.styleFrom(
