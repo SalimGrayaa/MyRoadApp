@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:myroad/Views/Settings/settings.dart';
+import 'package:myroad/Views/contact/contact.dart';
 import 'package:myroad/Views/homepage/home.dart';
 import 'package:myroad/Views/mainMapScreen/mainMapScreen.dart';
 import 'package:myroad/Views/profile/profile_friend.dart';
@@ -192,7 +193,10 @@ class _ProfilState extends State<profil> {
             Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Contacts()));
+                  },
                   child: Text('view contact '),
                   style: ElevatedButton.styleFrom(
                       primary: Colors.red, // background
