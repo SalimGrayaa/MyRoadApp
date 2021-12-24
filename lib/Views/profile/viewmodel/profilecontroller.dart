@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class ProfilController with ChangeNotifier {
   final FirebaseAuth _auth = FirebaseAuth.instance;
+
   Future signout() async {
     try {
       return await _auth.signOut();

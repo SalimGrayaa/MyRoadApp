@@ -1,8 +1,5 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-
 
 class profile_friend extends StatefulWidget {
   @override
@@ -12,34 +9,34 @@ class profile_friend extends StatefulWidget {
 class _profile_friend extends State<profile_friend> {
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: PreferredSize(
+      appBar: PreferredSize(
         preferredSize:
             Size.fromHeight(MediaQuery.of(context).size.height * 0.13),
         child: AppBar(
           backgroundColor: Color(0xFF104276),
-        leading: IconButton(
+          leading: IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.arrow_back,
               color: Colors.white,
             ),
           ),
-    automaticallyImplyLeading: true,
-    flexibleSpace: Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(110, 50, 0, 0),
-      child: TextButton(
-                    child: Text("Friend Profil"),
-                    style: TextButton.styleFrom(
-                      primary: Color(0x303030),
-                    ),
-                    onPressed: () {},
-                  ),
-    ),
-    actions: [],
-    elevation: 4,
-       ),
+          automaticallyImplyLeading: true,
+          flexibleSpace: Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(110, 50, 0, 0),
+            child: TextButton(
+              child: Text("Friend Profil"),
+              style: TextButton.styleFrom(
+                primary: Color(0x303030),
+              ),
+              onPressed: () {},
+            ),
+          ),
+          actions: [],
+          elevation: 4,
         ),
-        body: SafeArea(
+      ),
+      body: SafeArea(
         child: Column(mainAxisSize: MainAxisSize.max, children: [
           Container(
             width: 130,
@@ -54,14 +51,12 @@ class _profile_friend extends State<profile_friend> {
                 ],
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: NetworkImage( 'https://cdn.pixabay.com/photo/2018/01/13/19/39/fashion-3080644_960_720.jpg')
-
-                    )
-                ),
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://cdn.pixabay.com/photo/2018/01/13/19/39/fashion-3080644_960_720.jpg'))),
           ),
-           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(10,40, 0, 20),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 40, 0, 20),
             child: Text(
               'Yesmine Abdennadher',
               style: TextStyle(
@@ -71,18 +66,18 @@ class _profile_friend extends State<profile_friend> {
               ),
             ),
           ),
-           Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(10, 40, 0, 20),
-              child: Text(
-                'Yesmine Abdennadher',
-                style: TextStyle(
-                  fontFamily: 'Montserrat',
-                  color: Color(0xFF262323),
-                  fontWeight: FontWeight.bold,
-                ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 40, 0, 20),
+            child: Text(
+              'Yesmine Abdennadher',
+              style: TextStyle(
+                fontFamily: 'Montserrat',
+                color: Color(0xFF262323),
+                fontWeight: FontWeight.bold,
               ),
             ),
-            Text(
+          ),
+          Text(
             'Studies at:Higher school\n of communication of tunis',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -117,9 +112,8 @@ class _profile_friend extends State<profile_friend> {
                       fontFamily: "alex",
                     )),
               )),
-        ]
-        ),
-        ),
+        ]),
+      ),
     );
   }
 }

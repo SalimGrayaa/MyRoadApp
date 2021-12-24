@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myroad/Views/homepage/home.dart';
 import 'package:myroad/Views/loginPage/viewmodel/logincontroller.dart';
+import 'package:myroad/Views/profile/profile.dart';
 import 'package:myroad/Views/profile/viewmodel/profilecontroller.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
@@ -15,14 +16,17 @@ void main() async {
   await Firebase.initializeApp();
   runApp(Sizer(
     builder: (context, orientation, deviceType) {
-      return MultiProvider(providers: [
-        ChangeNotifierProvider(create: (_) => SignInController()),
-        ChangeNotifierProvider(create: (_) => SignUpController()),
-        ChangeNotifierProvider(create: (_) => ProfilController())
-      ], child: GetMaterialApp(
-        translations: LocalString(), 
-      locale: Locale('en', 'US'),
-      debugShowCheckedModeBanner: false, home: MyApp()));
+      return MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (_) => SignInController()),
+            ChangeNotifierProvider(create: (_) => SignUpController()),
+            ChangeNotifierProvider(create: (_) => ProfilController())
+          ],
+          child: GetMaterialApp(
+              translations: LocalString(),
+              locale: Locale('en', 'US'),
+              debugShowCheckedModeBanner: false,
+              home: MyApp()));
     },
   ));
 }
