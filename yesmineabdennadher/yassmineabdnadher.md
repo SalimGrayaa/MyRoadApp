@@ -1,0 +1,10 @@
+Setting page,
+languages page,
+Change the language when touched,
+Move back into location when clicked in the settings,
+going back to the sign up page when log out,
+setting up the different languages,
+Folders:
+    languagepage.dart,
+    LocalString.dart,
+    settings.dart,
