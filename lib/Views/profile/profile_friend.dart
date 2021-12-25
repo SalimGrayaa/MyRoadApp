@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myroad/Views/profile/profile.dart';
+import 'package:sizer/sizer.dart';
 
 class profile_friend extends StatefulWidget {
   @override
@@ -14,33 +16,38 @@ class _profile_friend extends State<profile_friend> {
             Size.fromHeight(MediaQuery.of(context).size.height * 0.13),
         child: AppBar(
           backgroundColor: Color(0xFF104276),
-          leading: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.white,
-            ),
-          ),
-          automaticallyImplyLeading: true,
           flexibleSpace: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(110, 50, 0, 0),
-            child: TextButton(
-              child: Text("Friend Profil"),
-              style: TextButton.styleFrom(
-                primary: Color(0x303030),
+            child: Text(
+              'Friend Profil',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                color: Colors.white,
+                fontSize: 30,
+                fontWeight: FontWeight.w600,
               ),
-              onPressed: () {},
             ),
           ),
-          actions: [],
+          actions: [
+            IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => profil()));
+              },
+              icon: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
+            ),
+          ],
           elevation: 4,
         ),
       ),
       body: SafeArea(
         child: Column(mainAxisSize: MainAxisSize.max, children: [
           Container(
-            width: 130,
-            height: 130,
+            width: 100.w,
+            height: 25.h,
             decoration: BoxDecoration(
                 border: Border.all(width: 4, color: Colors.white),
                 boxShadow: [

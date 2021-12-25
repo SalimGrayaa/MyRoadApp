@@ -41,9 +41,9 @@ class _ProfilState extends State<profil> {
     return Consumer<ProfilController>(builder: (context, value, child) {
       return Scaffold(
         // Generated code for this AppBar Widget...
-        appBar: PreferredSize(
+      appBar: PreferredSize(
           preferredSize:
-              Size.fromHeight(MediaQuery.of(context).size.height * 0.08),
+                Size.fromHeight(MediaQuery.of(context).size.height * 0.08),
           child: AppBar(
             backgroundColor: Color(0xFF104276),
             automaticallyImplyLeading: true,
@@ -195,7 +195,7 @@ class _ProfilState extends State<profil> {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Contacts()));
+                        MaterialPageRoute(builder: (context) => profile_friend()));
                   },
                   child: Text('view contact '),
                   style: ElevatedButton.styleFrom(
